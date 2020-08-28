@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../CSS final/System1.css">
+  <script  type="text/javascript" src="jquery.js"></script>
+  <script  type="text/javascript" src="Remito.js"></script>
+</head>
+<body>
+  <h1>BDAP</h1>
+  <div class="topnav">
+
+    <div class="dropdown">
+      <button class="myButton">Empleados<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="Employeelist.html">Lista de empleados</a>
+        <a href="addemp.html">Agregar empleado</a>
+
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="myButton">Productos<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="Employeelist.html">Lista de Productos</a>
+        <a href="addemp.html">Agregar Producto</a>
+
+      </div></div>
+      <div class="dropdown">
+        <button class="myButton">Facturación<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="Factura.html">Emitir Factura</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="myButton">Envío<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="Remito.html">Emitir remito</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="middle">
+        <h2>Agregar Producto</h2>
+        <form action="agprod.php" method="get">
+          <br><br><br>
+          <p>Nombre de producto:   </p>
+          <div class="numDiv">
+            <input type="text" id="numero" maxlength="10" name="nom">
+          </div>
+          <div class="pesoDiv">
+            <br>
+            <p>Codigo:</p>
+            <input type="text" id="peso" placeholder="Ingrese el código de producto" name="cod">
+          </div>
+          <div class="camionDiv">
+            <p>Modelo Producto:</p>
+            <br>
+            <input type="text" id="camion" placeholder="Ingrese el modelo del Producto" name="modelo">
+
+          </div>
+          <div class="dirEmDiv">
+            <p>Año:</p>
+            <br>
+            <input type="text" id="dirEm" placeholder="Ingrese el año del producto" name="anio">
+
+          </div>
+          <div class="dirRecDiv">
+            <p>Sistema:</p>
+            <br>
+            <input type="text" id="dirRec" placeholder="Ingrese la dirección de recepción" name="sistema">
+
+          </div>
+          <div class="fecRecDiv">
+            <p>Precio unitario: </p>
+            <br>
+            <input type="text" id="fecRec" placeholder="Ingrese el precio unitario" name="precio">
+          </div>
+          <div class="fecRecDiv">
+            <p>Stock: </p>
+            <br>
+            <input type="text" id="fecRec" placeholder="Ingrese el stock del producto" name="stock">
+          </div>
+
+          <input type="submit" class="val" value="Ingresar" >
+        </div>
+      </form>
+    </body>
+    </html>

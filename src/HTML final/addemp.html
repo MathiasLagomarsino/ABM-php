@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../CSS final/System1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../HTML final/jquery.js"></script>
+  <script type="text/javascript" src="../HTML final/addemp.js"></script>
+
+  <title>Agregar Empleado </title>
+</head>
+<body>
+  <h1>BDAP</h1>
+  <div class="topnav">
+
+    <div class="dropdown">
+      <button class="myButton">Empleados<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="Employeelist.html">Lista de empleados</a>
+        <a href="addemp.html">Agregar empleado</a>
+
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="myButton">Productos<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="Employeelist.html">Lista de Productos</a>
+        <a href="addemp.html">Agregar Producto</a>
+
+      </div></div>
+      <div class="dropdown">
+        <button class="myButton">Facturación<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="Factura.html">Emitir Factura</a>
+
+        </div>
+      </div>
+        <div class="dropdown">
+          <button class="myButton">Envío<i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="Remito.html">Emitir remito</a>
+
+          </div>
+        </div>
+    </div>
+  <div class="row">
+    
+
+    <div class="middle">
+
+
+    <h2>Agregar empleado</h2>
+    <br><br>
+    <div>
+      <form action="agemp.php" method="get">
+        <label>Nombre:</label>
+        <br><br>
+        <input type="text" class="Nombre" id="nombre" placeholder="Ingrese nombre" name="nom" required>
+        <br><br><br>
+        <label>DNI:</label>
+        <br><br>
+        <input type="text" class="DNI" id="DNI" placeholder="Ingrese DNI" name="dni" required>
+        <br><br><br>
+        <label>Cargo:</label>
+        <br><br>
+        <select class="pos" name="cargo">
+          <option value="0"></option>
+          <option value="Ventas">Ventas</option>
+          <option value="Compras">Compras</option>
+          <option value="Gerencia">Gerente</option>
+        </select>
+        <br><br><br>
+        <label>Contraseña:</label>
+        <br><br>
+        <input  class="Contras" type="text" id="contras" placeholder="Ingrese contraseña" name="contra" required>
+    </div>
+        <br><br><br>
+        <!--  <a href="Principal.html" class="btn"><i class="fa fa-angle-left">  Volver</i></a> -->
+        <input type="submit" class="Add"  placeholder="Agregar empleado"></input>
+      </form>
+    <br><br><br><br>
+  </div>
+</body>
+</html>
